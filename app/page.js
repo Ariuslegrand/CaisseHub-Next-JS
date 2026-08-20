@@ -32,7 +32,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>L'Élégance pour <span>Votre Jour-J</span></h1>
+          <h1 className={styles.heroTitle}>L'Élégance pour <br /><span>Votre Jour-J</span></h1>
           <p className={styles.heroSubtitle}>
             Location de voitures de prestige avec chauffeur pour mariages et événements d'exception.
           </p>
@@ -76,7 +76,7 @@ export default function Home() {
           <div className={styles.fleetGrid}>
             {/* Card 1 */}
             <div className={styles.fleetCard}>
-              <img src="https://images.unsplash.com/photo-1549480017-d76466a4b7e8?auto=format&fit=crop&q=80&w=600" alt="Mercedes Classe S Mariage" className={styles.fleetImage} />
+              <img src="/mercedes_wedding_car.jpg" alt="Mercedes Classe S Mariage" className={styles.fleetImage} />
               <div className={styles.fleetInfo}>
                 <h3 className={styles.fleetName}>Pack Élégance - Classe S</h3>
                 <p className={styles.fleetDesc}>L'incarnation du luxe absolu. Inclut chauffeur privé et décoration florale sur-mesure sur le capot.</p>
@@ -85,7 +85,7 @@ export default function Home() {
             </div>
             {/* Card 2 */}
             <div className={styles.fleetCard}>
-              <img src="https://images.unsplash.com/photo-1515938736719-95b568dc8a10?auto=format&fit=crop&q=80&w=600" alt="Rolls-Royce Phantom Mariage" className={styles.fleetImage} />
+              <img src="/rolls_royce_wedding.jpg" alt="Rolls-Royce Phantom Mariage" className={styles.fleetImage} />
               <div className={styles.fleetInfo}>
                 <h3 className={styles.fleetName}>Pack Prestige - Rolls-Royce</h3>
                 <p className={styles.fleetDesc}>L'élégance intemporelle pour une entrée majestueuse, ornée de fleurs de saison et rubans de soie.</p>
@@ -94,13 +94,40 @@ export default function Home() {
             </div>
             {/* Card 3 */}
             <div className={styles.fleetCard}>
-              <img src="https://images.unsplash.com/photo-1620577587788-51f7bb8a84fc?auto=format&fit=crop&q=80&w=600" alt="Mercedes G63 AMG Mariage" className={styles.fleetImage} />
+              <img src="/g_class_wedding.jpg" alt="Mercedes G63 AMG Mariage" className={styles.fleetImage} />
               <div className={styles.fleetInfo}>
                 <h3 className={styles.fleetName}>Pack Audace - Classe G</h3>
                 <p className={styles.fleetDesc}>Caractère et prestance imposante, sublimé par un bouquet asymétrique élégant pour un mariage moderne.</p>
                 <div className={styles.fleetPrice}>À partir de 600€ / jour</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="section container" id="avis">
+        <h2 className="section-title">Avis Clients</h2>
+        <p className="section-subtitle">Ce que nos mariés disent de nous</p>
+        
+        <div className={styles.fleetGrid} style={{ marginTop: '3rem' }}>
+          {/* Review 1 */}
+          <div style={{ backgroundColor: 'var(--card-bg)', padding: '2rem', borderRadius: '8px', border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div style={{ color: 'var(--accent-color)', fontSize: '1.5rem' }}>★★★★★</div>
+            <p style={{ fontStyle: 'italic', lineHeight: '1.6', flex: 1 }}>"Un service irréprochable ! La Mercedes Classe S était magnifique avec sa décoration florale. Le chauffeur était d'un grand professionnalisme. Merci d'avoir contribué à rendre notre mariage parfait."</p>
+            <div style={{ fontWeight: 'bold', marginTop: '1rem' }}>- Sophie & Julien</div>
+          </div>
+          {/* Review 2 */}
+          <div style={{ backgroundColor: 'var(--card-bg)', padding: '2rem', borderRadius: '8px', border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div style={{ color: 'var(--accent-color)', fontSize: '1.5rem' }}>★★★★★</div>
+            <p style={{ fontStyle: 'italic', lineHeight: '1.6', flex: 1 }}>"Nous avons loué la Rolls-Royce Phantom pour notre arrivée à la mairie. C'était tout simplement magique. Le service VIP avec le champagne à bord était une touche très appréciée."</p>
+            <div style={{ fontWeight: 'bold', marginTop: '1rem' }}>- Marie & Alexandre</div>
+          </div>
+          {/* Review 3 */}
+          <div style={{ backgroundColor: 'var(--card-bg)', padding: '2rem', borderRadius: '8px', border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div style={{ color: 'var(--accent-color)', fontSize: '1.5rem' }}>★★★★★</div>
+            <p style={{ fontStyle: 'italic', lineHeight: '1.6', flex: 1 }}>"La Classe G a fait sensation ! Une prestation haut de gamme, ponctuelle et avec une décoration florale sublime qui correspondait exactement à notre thème."</p>
+            <div style={{ fontWeight: 'bold', marginTop: '1rem' }}>- Claire & Thomas</div>
           </div>
         </div>
       </section>
